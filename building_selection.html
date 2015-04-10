@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Building Selection</title>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.maphilight.js"></script>
+        <script type="text/javascript" src="js/building.js"></script>
+        <script type="text/javascript">
+        	$(function() {
+		        $('.map').maphilight();
+		        /*
+		        $('#squidheadlink').mouseover(function(e) {
+		            $('#squidhead').mouseover();
+		        }).mouseout(function(e) {
+		            $('#squidhead').mouseout();
+		        }).click(function(e) { e.preventDefault(); });
+				*/
+		    });
+		</script>
+        <script type="text/javascript">
+            function submitFunction(bid) {
+                console.log(bid);
+            }
+        </script>
+</head>
+<body>
+	<div>
+		<div class="map" style="display: block; position: relative; padding: 0px; width: 650px; height: 548px; background: url(images/buildings.jpg);">
+			<canvas style="width: 650px; height: 548px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px; opacity: 1;" height="548" width="650"></canvas>
+			<img src="images/buildings.jpg" class="map maphilighted" usemap="#Map" style="opacity: 0; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;">
+		</div>
+		<map name="Map" id="Map">
+			<area id="squidhead" shape="poly" coords="521,318,607,265,616,274,614,285,626,295,617,342,613,349,535,399,522,395,526,357,520,348,521,318" href="#" onclick="submitFunction('74');" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:false,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;A9CF46&quot;,&quot;fillOpacity&quot;:0.6}" title="WING A6">
+            <area id="squidhead" shape="poly" coords="479,178,496,172,500,169,506,165,512,165,520,174,526,182,586,249,583,282,547,304,530,311,470,232,471,211,479,178" href="#" onclick="submitFunction('75');" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:false,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;A9CF46&quot;,&quot;fillOpacity&quot;:0.6}" title="WING B1">
+          </map>
+    </div>
+</body>
+</html>
