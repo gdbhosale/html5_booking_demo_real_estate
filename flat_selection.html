@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Building Selection</title>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.maphilight.js"></script>
+        <script type="text/javascript" src="js/building.js"></script>
+        <script type="text/javascript">
+        	$(function() {
+		        $('.map').maphilight();
+		        /*
+		        $('#squidheadlink').mouseover(function(e) {
+		            $('#squidhead').mouseover();
+		        }).mouseout(function(e) {
+		            $('#squidhead').mouseout();
+		        }).click(function(e) { e.preventDefault(); });
+				*/
+		    });
+		</script>
+        <script type="text/javascript">
+            function submitFunction(bid) {
+                console.log(bid);
+            }
+        </script>
+</head>
+<body>
+	<div>
+		<div class="map" style="display: block; position: relative; padding: 0px; width: 610px; height: 460px; background: url(images/floor_plan.jpg);">
+			<canvas style="width: 610px; height: 460px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;" width="610" height="460"></canvas>
+			<canvas style="width: 610px; height: 460px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px; opacity: 1;" height="460" width="610"></canvas>
+			<img src="images/floor_plan.jpg" class="map maphilighted" usemap="#Map" style="opacity: 0; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;">
+		</div>
+		<map name="Map" id="Map">
+			<area id="squidhead" shape="poly" coords="24,134,55,132,56,137,86,135,84,161,114,161,113,235,53,234,53,215,32,215,30,196,20,196,24,134" href="#" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:true,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;FAAFBE&quot;,&quot;fillOpacity&quot;:0.6}" title="Not Available">
+			<area id="squidhead" shape="poly" coords="115,167,143,165,143,142,206,140,206,201,198,201,197,220,174,220,174,242,113,243,115,167" href="#" onclick="click_it('14', 'AAPLA GHAR - URALI KANCHAN', 'WING B1', 'Floor - 3', '3100', '302', '516', '781', '2800', '0.0', '25000.0', '2358668.0', '-', 'ONLINE', 'UNSOLD', '2186800.0', '11000.0', '2 BHK', 'UraliKanchan_B1_102');" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:false,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;A9CF46&quot;,&quot;fillOpacity&quot;:0.6}" title="302">
+			<area id="squidhead" shape="poly" coords="205,140,239,138,239,144,268,142,268,167,297,168,298,243,236,240,236,220,213,220,213,202,204,200,205,140" href="#" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:true,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;FAAFBE&quot;,&quot;fillOpacity&quot;:0.6}" title="Not Available">
+			<area id="squidhead" shape="poly" coords="317,169,344,168,347,144,377,143,377,140,410,138,411,203,401,203,400,219,379,220,378,241,315,242,317,169" href="#" onclick="click_it('14', 'AAPLA GHAR - URALI KANCHAN', 'WING B1', 'Floor - 3', '3102', '304', '516', '781', '2700', '0.0', '25000.0', '2279787.0', '-', 'ONLINE', 'UNSOLD', '2108700.0', '11000.0', '2 BHK', 'UraliKanchan_B1_104');" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:false,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;A9CF46&quot;,&quot;fillOpacity&quot;:0.6}" title="304">
+			<area id="squidhead" shape="poly" coords="410,141,443,139,443,144,472,144,471,167,500,167,502,241,441,242,441,219,417,220,416,204,409,204,410,141" href="#" onclick="click_it('14', 'AAPLA GHAR - URALI KANCHAN', 'WING B1', 'Floor - 3', '3103', '305', '516', '781', '2700', '0.0', '25000.0', '2279787.0', '-', 'ONLINE', 'UNSOLD', '2108700.0', '11000.0', '2 BHK', 'UraliKanchan_B1_105');" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:false,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;A9CF46&quot;,&quot;fillOpacity&quot;:0.6}" title="305">
+			<area id="squidhead" shape="poly" coords="502,161,531,159,529,135,593,132,592,194,583,194,585,212,562,213,561,237,502,237,502,161" href="#" onclick="click_it('14', 'AAPLA GHAR - URALI KANCHAN', 'WING B1', 'Floor - 3', '3104', '306', '516', '781', '2700', '0.0', '25000.0', '2279787.0', '-', 'ONLINE', 'UNSOLD', '2108700.0', '11000.0', '2 BHK', 'UraliKanchan_B1_106');" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:false,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;A9CF46&quot;,&quot;fillOpacity&quot;:0.6}" title="306">
+			<area id="squidhead" shape="poly" coords="501,269,560,268,560,291,583,289,583,308,594,308,594,372,560,373,558,368,530,368,530,343,500,344,501,269" href="#" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:true,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;FAAFBE&quot;,&quot;fillOpacity&quot;:0.6}" title="Not Available">
+			<area id="squidhead" shape="poly" coords="408,301,417,299,418,284,439,282,440,263,501,262,499,338,473,335,472,364,409,366,408,301" href="#" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:true,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;FAAFBE&quot;,&quot;fillOpacity&quot;:0.6}" title="Not Available">
+			<area id="squidhead" shape="poly" coords="317,263,377,262,378,286,401,285,401,300,410,301,408,365,376,365,375,361,345,361,347,338,316,338,317,263" href="#" onclick="click_it('14', 'AAPLA GHAR - URALI KANCHAN', 'WING B1', 'Floor - 3', '3107', '309', '516', '781', '2800', '0.0', '25000.0', '2358668.0', '-', 'ONLINE', 'UNSOLD', '2186800.0', '11000.0', '2 BHK', 'UraliKanchan_B1_109');" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:false,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;A9CF46&quot;,&quot;fillOpacity&quot;:0.6}" title="309">
+			<area id="squidhead" shape="poly" coords="206,302,211,302,214,285,237,285,236,262,299,261,298,336,270,337,267,364,203,365,206,302" href="#" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:true,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;FAAFBE&quot;,&quot;fillOpacity&quot;:0.6}" title="Not Available">
+			<area id="squidhead" shape="poly" coords="113,262,175,261,174,283,197,286,197,299,205,302,205,366,172,366,172,362,142,362,143,338,114,337,113,262" href="#" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:true,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;FAAFBE&quot;,&quot;fillOpacity&quot;:0.6}" title="Not Available">
+			<area id="squidhead" shape="poly" coords="54,268,114,268,113,343,85,343,85,369,55,371,21,371,22,307,33,307,31,290,54,291,54,268" href="#" alt="Octoface" data-maphilight="{&quot;alwaysOn&quot;:true,&quot;stroke&quot;:false,&quot;fillColor&quot;:&quot;FAAFBE&quot;,&quot;fillOpacity&quot;:0.6}" title="Not Available">
+		</map>
+		</div>
+</body>
+</html>
